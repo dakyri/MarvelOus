@@ -27,7 +27,8 @@ import rx.functions.Func1;
 import rx.schedulers.Schedulers;
 
 /**
- *   parsing is via GSON, http handling via okhttp, asynchronous processing and callbacks via rx.
+ * handle the ins and outs of the marvel API.
+ * parsing is via GSON, http handling via okhttp, asynchronous processing and callbacks via rx.
  */
 public class MarvelAPI {
 

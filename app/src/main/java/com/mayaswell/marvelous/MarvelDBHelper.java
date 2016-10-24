@@ -23,8 +23,8 @@ public class MarvelDBHelper extends SQLiteOpenHelper {
 
 	public static final String TABLE_CHARACTERS = "characters";
 
-	public static final String KEY_DBKEY = "dbkey";
-	public static final String KEY_ID = "id";
+	public static final String KEY_DBKEY = "dbkey"; // ie the primary key/sql rowid
+	public static final String KEY_ID = "id"; // the marvel id of this entry
 	public static final String KEY_NAME = "name";
 	public static final String KEY_DESCRIPTION = "description";
 	public static final String KEY_IMAGE_PATH = "image_path";
@@ -85,6 +85,11 @@ public class MarvelDBHelper extends SQLiteOpenHelper {
 		return true;
 	}
 
+	/**
+	 * retrieve the character with the given marvel id
+	 * @param id
+	 * @return
+	 */
 	public Character getCharacter4Id(long id)
 	{
 		SQLiteDatabase db = getReadableDatabase();
@@ -98,6 +103,11 @@ public class MarvelDBHelper extends SQLiteOpenHelper {
 		return ch;
 	}
 
+	/**
+	 * get the primary key associated with the given marvel id
+	 * @param id
+	 * @return
+	 */
 	public int getKey4Id(long id)
 	{
 		SQLiteDatabase db = getReadableDatabase();

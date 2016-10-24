@@ -13,10 +13,11 @@ import java.util.ArrayList;
 import java.util.Collection;
 
 /**
+ * RecyclerView adapter for a Marvel Character item
  * Created by dak on 10/23/2016.
  */
 public class CharacterAdapter  extends RecyclerView.Adapter<CharacterAdapter.ViewHolder>{
-	ArrayList<Character> dataSet = new ArrayList<Character>();
+	ArrayList<Character> dataSet = new ArrayList<Character>(); // data set of items in our RecyclerView
 
 	public class ViewHolder  extends RecyclerView.ViewHolder {
 		public RelativeLayout parent;

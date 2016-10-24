@@ -10,6 +10,7 @@ import org.junit.Test;
 import static org.junit.Assert.*;
 
 /**
+ * unit tests for main api
  * Created by dak on 10/23/2016.
  */
 public class MarvelAPITest extends TestCase {
