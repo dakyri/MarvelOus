@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">MarvelOus</string>
+    <string name="api_key">d69ae1426b19ec1650e79780e2fac09c</string>
+    <string name="private_key">24e1aa65ba9828af4cd7415969bcff12d67cc696</string>
+    <string name="marvel_url_base">http://gateway.marvel.com/v1/public/</string>
+    <string name="goButtonLabel">Search</string>
+    <string name="searchBoxLabel">Character</string>
+    <string name="listLabel">Previous Searches</string>
+</resources>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+		xmlns:android="http://schemas.android.com/apk/res/android"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:clickable="true"
+		android:background="@drawable/character_item_bg"
+		android:paddingBottom="@dimen/characterItemPadding"
+		android:paddingTop="@dimen/characterItemPadding"
+	>
+	<TextView
+		android:id="@+id/itemNameView"
+		android:maxLines="200"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="5dip"
+		android:layout_marginLeft="5dip"
+		android:layout_marginRight="5dip"
+		android:singleLine="true"
+		style="@style/ItemNameText"
+		android:text=""
+	/>
+
+	<TextView
+		android:id="@+id/itemDescView"
+		android:width="0dip"
+		android:singleLine="true"
+		android:ellipsize="end"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_alignBottom="@+id/itemNameView"
+		android:layout_toRightOf="@id/itemNameView"
+		android:layout_alignParentRight="true"
+		android:layout_marginTop="5dip"
+		android:layout_marginLeft="5dip"
+		android:layout_marginRight="5dip"
+		style="@style/ItemBriefDescriptionText"
+		android:text=""
+	/>
+</RelativeLayout>
